@@ -2325,7 +2325,7 @@ input, select, textarea {
 		font-weight: 900;
 		line-height: 1.5;
 		letter-spacing: 0.075em;
-		font-size: 0.8rem;
+		font-size: 2.4rem;
 		text-transform: uppercase;
 		margin: 0 0 0.75rem 0;
 	}
@@ -2333,7 +2333,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			label {
-				font-size: 0.9rem;
+				font-size: 2,7rem;
 			}
 
 		}
@@ -2403,7 +2403,7 @@ input, select, textarea {
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
-		display: block;
+		display: inline-block;
 		float: left;
 		margin-right: -2rem;
 		opacity: 0;
@@ -2423,7 +2423,7 @@ input, select, textarea {
 			font-weight: 300;
 			padding-left: 2.8rem;
 			padding-right: 1rem;
-			position: relative;
+			position: absolute;
 		}
 
 			input[type="checkbox"] + label:before,
