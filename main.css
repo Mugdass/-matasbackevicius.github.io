@@ -2344,7 +2344,7 @@ input, select, textarea {
 	select,
 	textarea {
 		-moz-appearance: none;
-		-webkit-appearance: none;
+    -webkit-appearance: radio;
 		-ms-appearance: none;
 		appearance: none;
 		background: transparent;
@@ -2395,6 +2395,8 @@ input, select, textarea {
 
 	textarea {
 		padding: 0.75rem 1rem;
+    -webkit-appearance: radio;
+
 	}
 
 	input[type="checkbox"],
@@ -2473,6 +2475,13 @@ input, select, textarea {
 		border-radius: 100%;
                 -webkit-appearance: radio;
 	}
+
+
+
+        input[type="radio"]{
+    -webkit-appearance: radio;
+}
+
 
 	::-webkit-input-placeholder {
 		opacity: 1.0;
@@ -2574,7 +2583,7 @@ input, select, textarea {
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
-		position: relative;
+		position: absolute;
 	}
 
 		.icon:before {
