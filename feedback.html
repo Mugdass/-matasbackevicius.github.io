@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Questionnaire and Feedback</title>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script>
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/18550/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Your Form Has Been Submitted. Thank You! :)")
+        },
+        error: function(){
+          alert("Error! Try Again.(")
+        }
+    });
+}
+</script>
+</head>
+<body>
+
+
+
+
+<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	<link rel="stylesheet" type="text/html" href="index.html">
+	<link rel="stylesheet" type="text/html" href="JavaApplication.html">
+	<link rel="stylesheet" type="text/html" href="about.html">
+	<link rel="stylesheet" type="text/html" href="https://mugdass.github.io/gamedevelopment.com/gamedevelopment.html">  
+         <link rel="stylesheet" type="text/html" href="https://mugdass.github.io/-matasbackevicius.github.com/index.html"> 
+  
+  
+  <div class="topnav">
+
+		<a href="index.html" class="button">Home</a>
+		<a href="about.html" class="button">About the Author</a>
+		<a href="https://mugdass.github.io/gamedevelopment.com/gamedevelopment.html" class="button">Game Development</a>
+		<a class="button" href="#feedback.html">Provide Feedback</a>
+		<a href="https://mugdass.github.io/allotherwork.com/allotherwork.html" class="button">All Other Work</a>
+                 <link rel="stylesheet" type="text/html" href="https://mugdass.github.io/-matasbackevicius.github.com/index.html"> 
+		
+
+
+
+
+ <p> <br> Like other forms, the benefit of the following one is that it allows you the option to select at your own pace and preference. <br> <br> Whenever you're ready <br> <br> Start Here:
+</p> 
+
+
+
+
+
+
+
+
+  <form id="myForm">
+    <label>Full Name</label>
+    <br/>
+    <input name="full_name" />
+    <br/>
+    <label>Email</label>
+    <br/>
+    <input name="email" />
+    <br/>
+   
+
+<p style="font-size:20px;">Please Rate the Following on a 5/5 scale (5 the best):</p>
+
+
+
+ <label>Pages</label>
+    <br/>
+
+
+    <input type="radio" id="pages" name="pages" value="5" /> 5<br/>
+    <input type="radio" id="pages" name="pages" value="4" /> 4<br/>
+    <input type="radio" id="pages" name="pages" value="3" /> 3<br/>
+    <input type="radio" id="pages" name="pages" value="2" /> 2<br/>
+    <input type="radio" id="pages" name="pages" value="1" /> 1<br/>
+    <br/>
+    <br/>
+
+
+<label>Design</label>
+    <br/>
+
+
+
+    <input type="radio" id="design" name="design" value="5" /> 5<br/>
+    <input type="radio" id="design" name="design" value="4" /> 4<br/>
+    <input type="radio" id="design" name="design" value="3" /> 3<br/>
+    <input type="radio" id="design" name="design" value="2" /> 2<br/>
+    <input type="radio" id="design" name="design" value="1" /> 1<br/>
+    <br/>
+
+
+
+<br>
+<label>Content</label>
+    <br/>
+
+<input type="radio" id="content" name="content" value="5" /> 5<br/>
+<input type="radio" id="content" name="content" value="4" /> 4<br/>
+<input type="radio" id="content" name="content" value="3" /> 3<br/>
+<input type="radio" id="content" name="content" value="2" /> 2<br/>
+<input type="radio" id="content" name="content" value="1" /> 1<br/>
+
+<br>
+<br>
+
+
+
+
+
+<br>
+<label>Visuals</label>
+    <br/>
+
+<input type="radio" id="visuals" name="visuals" value="5" /> 5<br/>
+<input type="radio" id="visuals" name="visuals" value="4" /> 4<br/>
+<input type="radio" id="visuals" name="visuals" value="3" /> 3<br/>
+<input type="radio" id="visuals" name="visuals" value="2" /> 2<br/>
+<input type="radio" id="visuals" name="visuals" value="1" /> 1<br/>
+    <br/>
+
+
+
+
+
+<br>
+<label>Quality</label>
+    <br/>
+
+<input type="radio" id="quality" name="quality" value="5" /> 5<br/>
+<input type="radio" id="quality" name="quality" value="4" /> 4<br/>
+<input type="radio" id="quality" name="quality" value="3" /> 3<br/>
+<input type="radio" id="quality" name="quality" value="2" /> 2<br/>
+<input type="radio" id="quality" name="quality" value="1" /> 1<br/>
+    <br/>
+
+
+
+
+
+
+
+<br>
+<label>Quantity</label>
+    <br/>
+
+<input type="radio" id="quantity" name="quantity" value="5" /> 5<br/>
+<input type="radio" id="quantity" name="quantity" value="4" /> 4<br/>
+<input type="radio" id="quantity" name="quantity" value="3" /> 3<br/>
+<input type="radio" id="quantity" name="quantity" value="2" /> 2<br/>
+<input type="radio" id="quantity" name="quantity" value="1" /> 1<br/>
+    <br/>
+
+
+
+
+
+
+<br>
+<label>Transitions</label>
+    <br/>
+
+<input type="radio" id="transitions" name="transitions" value="5" /> 5<br/>
+<input type="radio" id="transitions" name="transitions" value="4" /> 4<br/>
+<input type="radio" id="transitions" name="transitions" value="3" /> 3<br/>
+<input type="radio" id="transitions" name="transitions" value="2" /> 2<br/>
+<input type="radio" id="transitions" name="transitions" value="1" /> 1<br/>
+    <br/>
+
+
+
+
+<p>Please provide Additional Comments:</p>
+
+
+    <label>comments</label>
+    <br/>
+    <textarea name="comments">
+    </textarea>
+    <br/>
+    <br/>
+  </form>
+  <button onclick="SubForm()">Submit</button>
+
+
+
+
+
+
+<br>
+
+<p style="font-size:20px;">Or If you would like to send you Feedback through the email</p>
+<p> click <a href="mailto:matasbackevicius@gmail.com" class="button">Send</a></p>
+
+
+
+
+
+
+<p style="font-size:30px;">Thank You For Your Time!
+</p>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
