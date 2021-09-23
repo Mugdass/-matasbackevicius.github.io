@@ -152,7 +152,7 @@ input, select, textarea {
 	body, input, select, textarea {
 		font-family: "Merriweather", Georgia, serif;
 		font-weight: 300;
-		font-size: 1rem;
+		font-size: 2rem;
 		line-height: 2.375;
 	}
 
@@ -2320,12 +2320,12 @@ input, select, textarea {
 		}
 
 	label {
-		display: block;
+		display: incline-block;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-weight: 900;
 		line-height: 1.5;
 		letter-spacing: 0.075em;
-		font-size: 0.8rem;
+		font-size: 20px;
 		text-transform: uppercase;
 		margin: 0 0 0.75rem 0;
 	}
@@ -2349,12 +2349,12 @@ input, select, textarea {
 		appearance: none;
 		background: transparent;
 		border-radius: 0;
-		border: solid 2px;
+		border: solid 4px;
 
 
 
 		color: inherit;
-		display: block;
+		display: incline-block;
 		outline: 0;
 		padding: 0 1rem;
 		text-decoration: none;
@@ -2394,7 +2394,7 @@ input, select, textarea {
 	}
 
 	textarea {
-		padding: 0.75rem 1rem;
+		padding: 2rem 1rem;
 	}
 
 	input[type="checkbox"],
@@ -2405,15 +2405,15 @@ input, select, textarea {
 		-ms-appearance: none;
 		appearance: none;
 		display: inline-block;
-		float: left;
-		margin-right: -2rem;
+		float: right
+		margin-left 2rem
 		opacity: 20px
-		width: 1rem;
+		width: 25px;
 		z-index: -1;
 
 
-                padding-left: 35px;
-			padding-right: 12px
+                padding-left: 60px;
+			padding-right: 25px;
 			position: absolute;
 	}
 
@@ -2422,13 +2422,13 @@ input, select, textarea {
 			text-decoration: none;
 			cursor: pointer;
 			display: inline-block;
-			font-size: 1rem;
+			font-size: 35px;
 			letter-spacing: 0;
 			font-family: "Merriweather", Georgia, serif;
 			text-transform: none;
 			font-weight: 300;
-			padding-left: 35px;
-			padding-right: 12px
+			padding-left: 60px;
+			padding-right: 25px;
 			position: absolute;
 		}
 
@@ -2454,12 +2454,12 @@ input, select, textarea {
                
                                  -webkit-appearance: radio; 
 				border-radius: 50%
-				border: solid 2px;
+				border: solid 4px;
 				content: '';
 				display: inline-block;
-				font-size: 0.8rem;
-				height: 1.8rem;
-				left: 0;
+				font-size: 40px;
+				height: 20px;
+				left: 1;
 				line-height: 1.65rem;
 				position: absolute;
 				text-align: center;
@@ -2477,7 +2477,7 @@ input, select, textarea {
 	}
 
 	input[type="radio"] + label:before {
-		border-radius: 50;
+		border-radius: 75;
 	}
 
 	::-webkit-input-placeholder {
