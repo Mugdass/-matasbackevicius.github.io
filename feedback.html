@@ -22,20 +22,87 @@ function SubForm (){
 }
 </script>
 </head>
+
+
+
+
+
+<style>
+/* The container */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+
+
+
+
+
+
+
+
+
+
+
+
 <body>
 
+{
+  background-color: hsla(89, 43%, 51%, 0.3);
+}
 
-
-
-<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-
-	<link rel="stylesheet" type="text/html" href="index.html">
-	<link rel="stylesheet" type="text/html" href="JavaApplication.html">
-	<link rel="stylesheet" type="text/html" href="about.html">
-	<link rel="stylesheet" type="text/html" href="https://mugdass.github.io/gamedevelopment.com/gamedevelopment.html">  
-         <link rel="stylesheet" type="text/html" href="https://mugdass.github.io/-matasbackevicius.github.com/index.html"> 
   
+
+{
+  font-family: Arial;
+  margin: 0;
+}
+
+/* Header/Logo Title */
+.header {
+  padding: 60px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 30px;
+}
+
+/* Page Content */
+.content {padding:20px;}
+
   
   <div class="topnav">
 
