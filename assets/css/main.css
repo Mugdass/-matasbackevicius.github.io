@@ -2323,9 +2323,9 @@ input, select, textarea {
 		display: incline-block;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-weight: 900;
-		line-height: 1.5;
-		letter-spacing: 0.075em;
-		font-size: 20px;
+		line-height: 5px;
+		letter-spacing: 1em;
+		font-size: 60px;
 		text-transform: uppercase;
 		margin: 0 0 0.75rem 0;
 	}
@@ -2333,7 +2333,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			label {
-				font-size: 0.9rem;
+				font-size: 3rem
 			}
 
 		}
@@ -2580,7 +2580,7 @@ input, select, textarea {
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
-		position: absolute;
+		position: relative;
 	}
 
 		.icon:before {
