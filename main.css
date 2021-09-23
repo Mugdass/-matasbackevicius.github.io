@@ -2400,7 +2400,7 @@ input, select, textarea {
 	input[type="checkbox"],
 	input[type="radio"] {
 		
-		-webkit-appearance: auto;
+		-webkit-appearance: radio;
 		-ms-appearance: none;
 		appearance: none;
 		display: inline-block;
@@ -2414,7 +2414,7 @@ input, select, textarea {
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
 			text-decoration: none;
-                        -webkit-appearance: auto;
+                        -webkit-appearance: radio;
 			cursor: pointer;
 			display: inline-block;
 			font-size: 4rem;
@@ -2439,7 +2439,7 @@ input, select, textarea {
 				text-transform: none !important;
 				font-family: 'Font Awesome 5 Free';
 				font-weight: 900;
-                                -webkit-appearance: auto;
+                                -webkit-appearance: radio;
 			}
 
 			input[type="checkbox"] + label:before,
@@ -2456,12 +2456,13 @@ input, select, textarea {
 				text-align: center;
 				top: -0.125rem;
 				width: 1.8rem;
-                                -webkit-appearance: auto;
+                                -webkit-appearance: radio;
 			}
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
 			content: '\f00c';
+                        -webkit-appearance: radio;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2470,7 +2471,7 @@ input, select, textarea {
 
 	input[type="radio"] + label:before {
 		border-radius: 100%;
-                -webkit-appearance: auto;
+                -webkit-appearance: radio;
 	}
 
 	::-webkit-input-placeholder {
@@ -2525,13 +2526,13 @@ input, select, textarea {
 	input[type="checkbox"] + label,
 	input[type="radio"] + label {
 		color: #212931;
-                -webkit-appearance: auto;
+                -webkit-appearance: radio;
 	}
 
 		input[type="checkbox"] + label:before,
 		input[type="radio"] + label:before {
 			border-color: #eeeeee;
-                        -webkit-appearance: auto;
+                        -webkit-appearance: radio;
 		}
 
 	input[type="checkbox"]:checked + label:before,
@@ -2539,13 +2540,13 @@ input, select, textarea {
 		background-color: #212931;
 		border-color: #212931;
 		color: #ffffff;
-                -webkit-appearance: auto;
+                -webkit-appearance: radio;
 	}
 
 	input[type="checkbox"]:focus + label:before,
 	input[type="radio"]:focus + label:before {
 		border-color: #ebf37a;
-                -webkit-appearance: auto;
+                -webkit-appearance: radio;
 	}
 
 	::-webkit-input-placeholder {
