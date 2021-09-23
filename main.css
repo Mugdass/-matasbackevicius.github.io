@@ -2325,7 +2325,7 @@ input, select, textarea {
 		font-weight: 900;
 		line-height: 1.5;
 		letter-spacing: 0.075em;
-		font-size: 2.4rem;
+		font-size: 0.8rem;
 		text-transform: uppercase;
 		margin: 0 0 0.75rem 0;
 	}
@@ -2333,7 +2333,7 @@ input, select, textarea {
 		@media screen and (max-width: 980px) {
 
 			label {
-				font-size: 2,7rem;
+				font-size: 20px;
 			}
 
 		}
@@ -2399,16 +2399,16 @@ input, select, textarea {
 
 	input[type="checkbox"],
 	input[type="radio"] {
-		-moz-appearance: none;
+		
 		-webkit-appearance: none;
 		-ms-appearance: none;
 		appearance: none;
 		display: inline-block;
 		float: left;
-		margin-right: -2rem;
+		margin-right: 4rem;
 		opacity: 0;
-		width: 1rem;
-		z-index: -1;
+		width: 2rem;
+		z-index: 2;
 	}
 
 		input[type="checkbox"] + label,
@@ -2416,13 +2416,13 @@ input, select, textarea {
 			text-decoration: none;
 			cursor: pointer;
 			display: inline-block;
-			font-size: 1rem;
+			font-size: 4rem;
 			letter-spacing: 0;
 			font-family: "Merriweather", Georgia, serif;
 			text-transform: none;
 			font-weight: 300;
-			padding-left: 2.8rem;
-			padding-right: 1rem;
+			padding-left: 8rem;
+			padding-right: 2rem;
 			position: absolute;
 		}
 
