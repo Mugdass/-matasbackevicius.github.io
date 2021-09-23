@@ -74,7 +74,7 @@
 		font-weight: _font(weight-heading);
 		line-height: 1.5;
 		letter-spacing: 0.075em;
-		font-size: 0.8rem;
+		font-size: 1.8rem;
 		text-transform: uppercase;
 		margin: 0 0 (_size(element-margin) * 0.375) 0;
 
@@ -93,7 +93,7 @@
 		border-radius: 0;
 		border: solid 2px;
 		color: inherit;
-		display: block;
+		display: incline-block;
 		outline: 0;
 		padding: 0 1rem;
 		text-decoration: none;
@@ -137,8 +137,8 @@
 	input[type="checkbox"],
 	input[type="radio"], {
 		@include vendor('appearance', 'none');
-		display: block;
-		float: left;
+		display: incline-block;
+		float: center;
 		margin-right: -2rem;
 		opacity: 0;
 		width: 1rem;
