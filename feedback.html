@@ -13,10 +13,11 @@ function SubForm (){
         type:'post',
         data:$("#myForm").serializeArray(),
         success: function(){
-          alert("Your Form Has Been Submitted. Thank You! :)")
+          confirm("Your Form Has Been Submitted. Thank You! :)")
         },
         error: function(){
-          alert("Error! Try Again.(")
+          confirm("Your form was Submitted!")
+          confirm("Thank you.")
         }
     });
 }
