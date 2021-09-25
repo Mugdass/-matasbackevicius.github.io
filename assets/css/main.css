@@ -2435,7 +2435,7 @@ input, select, textarea {
 				-webkit-font-smoothing: antialiased;
 
 
-                                 -webkit-appearance: radio;
+                                
 
 
 				display: inline-block;
@@ -2481,6 +2481,7 @@ input, select, textarea {
 
 	input[type="radio"] + label:before {
 		border-radius: 100%;
+                 -webkit-appearance: radio;
                 
 	}
 
