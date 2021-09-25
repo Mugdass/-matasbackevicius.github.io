@@ -2405,7 +2405,7 @@ input, select, textarea {
 		appearance: none;
 		display: block;
 		float: left;
-		margin-right: -4rem;
+		margin-right: 1rem;
 		opacity: 0;
 		width: 1rem;
 		z-index: -1;
