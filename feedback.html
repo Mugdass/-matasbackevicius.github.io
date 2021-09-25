@@ -9,15 +9,16 @@
 <script>
 function SubForm (){
     $.ajax({
-        url:'https://api.apispreadsheets.com/data/18550/',
+        url:'https://api.apispreadsheets.com/data/18660/',
         type:'post',
         data:$("#myForm").serializeArray(),
         success: function(){
-          confirm("Your Form Has Been Submitted. Thank You! :)")
+          alert("Your Form Has Been Submitted.")
+          alert("Thank You!")
         },
         error: function(){
-          confirm("Your form was Submitted!")
-          confirm("Thank you.")
+          alert("Unexpected ERROR")
+          alert("Please Try Again!")
         }
     });
 }
@@ -51,8 +52,8 @@ function SubForm (){
 
 
 
- <p> <br> Like other forms, the benefit of the following one is that it allows you the option to select at your own pace and preference. <br> <br> Whenever you're ready <br> <br> Start Here:
-</p> 
+ <h2> <br> Like other forms, the benefit of the following one is that it allows you the option to select at your own pace and preference. <br> <br> Whenever you're ready <br> <br> Start Here:
+</h2> 
 
 
 
@@ -72,9 +73,12 @@ function SubForm (){
     <br/>
    
 
-<p style="font-size:20px;">Please Rate the Following on a 5/5 scale (5 the best):</p>
+<h2 style="font-size:20px;">Please Rate the Following on a 5/5 scale (5 the best)</h2>
 
 
+<br>
+<h2> Please put a check next to your number. 0-5 (Number 5 being the Highest and Number 1 the Lowest)</h2>
+<br>
 
  <label>Pages</label>
     <br/>
@@ -87,6 +91,12 @@ function SubForm (){
     <input type="radio" id="pages" name="pages" value="1" /> 1<br/>
     <br/>
     <br/>
+
+
+
+<br>
+<h2> Please put a check next to your number. 0-5 (Number 5 being the Highest and Number 1 the Lowest)</h2>
+<br>
 
 
 <label>Design</label>
@@ -104,6 +114,12 @@ function SubForm (){
 
 
 <br>
+
+<br>
+<h2> Please put a check next to your number. 0-5 (Number 5 being the Highest and Number 1 the Lowest)</h2>
+<br>
+
+
 <label>Content</label>
     <br/>
 
@@ -118,6 +134,9 @@ function SubForm (){
 
 
 
+<br>
+<h2> Please put a check next to your number. 0-5 (Number 5 being the Highest and Number 1 the Lowest)</h2>
+<br>
 
 
 <br>
@@ -133,6 +152,9 @@ function SubForm (){
 
 
 
+<br>
+<h2> Please put a check next to your number. 0-5 (Number 5 being the Highest and Number 1 the Lowest)</h2>
+<br>
 
 
 <br>
@@ -150,7 +172,9 @@ function SubForm (){
 
 
 
-
+<br>
+<h2> Please put a check next to your number. 0-5 (Number 5 being the Highest and Number 1 the Lowest)</h2>
+<br>
 
 <br>
 <label>Quantity</label>
@@ -166,6 +190,9 @@ function SubForm (){
 
 
 
+<br>
+<h2> Please put a check next to your number. 0-5 (Number 5 being the Highest and Number 1 the Lowest)</h2>
+<br>
 
 
 <br>
@@ -182,7 +209,7 @@ function SubForm (){
 
 
 
-<p>Please provide Additional Comments:</p>
+<p>Please provide Comments inside the Comment block down below:</p>
 
 
     <label>comments</label>
@@ -212,11 +239,12 @@ function SubForm (){
 <p style="font-size:30px;">Thank You For Your Time!
 </p>
 
+<br>
 
 
 
 
-
+<a href="https://mugdass.github.io/-matasbackevicius.github.com/index.html" class="button">Back to Homepage</a>
 
 
 
