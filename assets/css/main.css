@@ -2413,6 +2413,7 @@ input, select, textarea {
 
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
+                 -webkit-appearance: radio;
 			text-decoration: none;
 			cursor: pointer;
 			display: inline-block;
@@ -2423,7 +2424,7 @@ input, select, textarea {
 			font-weight: 300;
 			padding-left: 2.8rem;
 			padding-right: 1rem;
-			position: relative;
+			position: absolute
 		}
 
 			input[type="checkbox"] + label:before,
