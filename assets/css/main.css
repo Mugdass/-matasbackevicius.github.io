@@ -2405,7 +2405,7 @@ input, select, textarea {
 
 		-ms-appearance: none;
 		appearance: none;
-		display: block;
+		display: incline;
 		float: left;
 		margin-right: 1rem;
 		opacity: 0;
@@ -2580,7 +2580,7 @@ input, select, textarea {
 	.icon {
 		text-decoration: none;
 		border-bottom: none;
-		position: absolute;
+		position: relative;
 	}
 
 		.icon:before {
