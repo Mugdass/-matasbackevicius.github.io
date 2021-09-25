@@ -2349,7 +2349,7 @@ input, select, textarea {
 		appearance: none;
 		background: transparent;
 		border-radius: 0;
-		border: solid 2px;
+		border: solid 4px;
 
 
 
@@ -2400,7 +2400,7 @@ input, select, textarea {
 	input[type="checkbox"],
 	input[type="radio"] {
 		-moz-appearance: none;
-		-webkit-appearance: none;
+		-webkit-appearance: radio;
 		-ms-appearance: none;
 		appearance: none;
 		display: block;
@@ -2467,6 +2467,7 @@ input, select, textarea {
 
 	input[type="radio"] + label:before {
 		border-radius: 100%;
+                -webkit-appearance: radio;
 	}
 
 	::-webkit-input-placeholder {
