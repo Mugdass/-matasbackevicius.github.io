@@ -2344,7 +2344,7 @@ input, select, textarea {
 	select,
 	textarea {
 		-moz-appearance: none;
-		-webkit-appearance: none;
+		-webkit-appearance: radio;
 		-ms-appearance: none;
 		appearance: none;
 		background: transparent;
@@ -2456,6 +2456,16 @@ input, select, textarea {
 				top: -0.125rem;
 				width: 1.8rem;
 			}
+
+
+
+
+input[type="radio"]{
+    -webkit-appearance: radio;
+}
+
+
+
 
 		input[type="checkbox"]:checked + label:before,
 		input[type="radio"]:checked + label:before {
