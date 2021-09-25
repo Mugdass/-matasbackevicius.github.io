@@ -2424,7 +2424,7 @@ input, select, textarea {
 			font-weight: 300;
 			padding-left: 2.8rem;
 			padding-right: 2rem;
-			position: relative
+			position: relative;
 		}
 
 			input[type="checkbox"] + label:before,
@@ -2451,7 +2451,7 @@ input, select, textarea {
 				height: 1.8rem;
 				left: 0;
 				line-height: 1.65rem;
-				position: absolute;
+				position: relative;
 				text-align: center;
 				top: -0.125rem;
 				width: 1.8rem;
