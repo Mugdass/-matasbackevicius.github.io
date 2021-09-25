@@ -68,6 +68,8 @@ input::-moz-focus-inner {
 }
 
 input, select, textarea {
+        
+    -webkit-appearance: radio;
 	-moz-appearance: none;
 	-ms-appearance: none;
 	appearance: none;
