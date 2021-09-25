@@ -2400,12 +2400,12 @@ input, select, textarea {
 	input[type="checkbox"],
 	input[type="radio"] {
 		-moz-appearance: none;
-		-webkit-appearance: radio;
+		
 		-ms-appearance: none;
 		appearance: none;
 		display: block;
 		float: left;
-		margin-right: 2rem;
+		margin-right: -2rem;
 		opacity: 0;
 		width: 1rem;
 		z-index: -1;
@@ -2413,7 +2413,7 @@ input, select, textarea {
 
 		input[type="checkbox"] + label,
 		input[type="radio"] + label {
-                 -webkit-appearance: radio;
+                 
 			text-decoration: none;
 			cursor: pointer;
 			display: inline-block;
@@ -2424,7 +2424,7 @@ input, select, textarea {
 			font-weight: 300;
 			padding-left: 2.8rem;
 			padding-right: 2rem;
-			position: relative;
+			position: absolute;
 		}
 
 			input[type="checkbox"] + label:before,
