@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serverless Form</title>
+<script src="https://unpkg.com/jquery@3.3.1/dist/jquery.min.js"></script>
+</head>
+<body>
+
+
+<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	<link rel="stylesheet" type="text/html" href="index.html">
+	<link rel="stylesheet" type="text/html" href="JavaApplication.html">
+	<link rel="stylesheet" type="text/html" href="about.html">
+	<link rel="stylesheet" type="text/html" href="https://mugdass.github.io/gamedevelopment.com/gamedevelopment.html">  
+         <link rel="stylesheet" type="text/html" href="https://mugdass.github.io/-matasbackevicius.github.com/index.html"> 
+  
+  
+  <div class="topnav">
+
+		<a href="index.html" class="button">Home</a>
+		<a href="about.html" class="button">About the Author</a>
+		<a href="https://mugdass.github.io/gamedevelopment.com/gamedevelopment.html" class="button">Game Development</a>
+		<a class="button" href="#feedback.html">Provide Feedback</a>
+		<a href="https://mugdass.github.io/allotherwork.com/allotherwork.html" class="button">All Other Work</a>
+                 <link rel="stylesheet" type="text/html" href="https://mugdass.github.io/-matasbackevicius.github.com/index.html"> 
+		
+
+
+
+
+ <h2> <br> Like other forms, the benefit of the following one is that it allows you the option to select at your own pace and preference. <br> <br> Whenever you're ready <br> <br> Start Here:
+</h2> 
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h2>HTML Feedback Form</h2>
+
+
+<p> How Effective were each of these sections?</p>
+<br>
+<p>Please Write in your Response!</p>
+
+
+
+
+
+
+
+
+
+
+
+
+<form id="contactForm" name="serverless-form">
+
+    <form action="" method="POST">
+      <label for="fname">First Name:</label>
+      <input type="text" id="fname" name="fname" value="">
+      <label for="lname">Last Name:</label>
+      <input type="text" id="lname" name="lname" value="">
+      
+<br>
+
+
+
+<label>Pages</label>
+
+
+    <input type="text" id="pages" name="pages" value="">
+
+
+<label>Design</label>
+    
+
+
+    <input type="text" id="design" name="design" value="">
+    
+
+
+<br>
+
+<label>Content</label>
+
+
+    <input type="text" id="pages" name="content" value="">
+
+
+<label>Visuals</label>
+    
+
+
+    <input type="text" id="design" name="visuals" value="">
+    
+
+
+<br>
+
+     
+
+
+
+<label>Quality</label>
+
+
+    <input type="text" id="pages" name="quality" value="">
+
+
+<label>quantity</label>
+    
+
+
+    <input type="text" id="design" name="quantity" value="">
+    
+
+
+<br>
+
+<label>Transitions</label>
+
+
+
+    <input type="text" id="pages" name="transitions" value=""
+
+
+
+   <br>
+
+
+
+
+    <label>comments</label>
+    
+
+    <textarea name="comments">
+    </textarea>
+    <br/>
+    <br/>
+
+
+
+
+
+
+
+
+<button onclick="SubForm()">Submit</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form> 
+    
+
+
+
+
+<script>
+
+
+function SubForm (){
+    $.ajax({
+        url:'https://api.apispreadsheets.com/data/18659/',
+        type:'post',
+        data:$("#myForm").serializeArray(),
+        success: function(){
+          alert("Your Form has been Submitted!")
+	  alert("Thank you very much!")
+        },
+        error: function(){
+          alert("Your Form has been Submitted!")
+          alert("Thank you very much!")
+        }
+    });
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        var spinner = $('#loader');
+        const scriptURLC ='https://script.google.com/macros/s/AKfycbz-L3vQeF0r5wYHqgb1NU_45cBbRNqbmsx7-6voyGei2eYKCabjykmVX8uOt4OeFUpmWw/exec'
+        const serverlessForm = document.forms['serverless-form'];
+
+        serverlessForm.addEventListener('submit', e => {
+            e.preventDefault();
+            spinner.show();
+
+
+            fetch(scriptURLC, {
+                    method: 'POST',
+                    body: new FormData(serverlessForm)
+                })
+                .then(res => {
+
+                    console.log(res);
+                    spinner.hide();
+
+                    if (res['status'] == 200) {
+                        swal("Your form has been submitted!",
+                            "We will get back to you soon. Have a great day!", "success");
+                        return true;
+
+                    } else {
+                        swal("Something went wrong!", "Please try after some time", "error");
+
+                    }
+                    document.getElementById('submitForm').classList.remove('loading');
+                })
+                .catch(error => {
+
+                    swal("Something went wrong!", "Please try after some time", "error");
+                    // todo enable submit button
+
+                })
+        });
+    </script>
+
+
+
+
+
+</body>
+</html>
